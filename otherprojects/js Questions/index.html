@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>js Questions</title>
+    <h1>js Questions</h1>
+</head>
+
+<body>
+    <h2>Question #1</h2>
+    <pre>
+        var userAge = prompt("Please enter your age");
+
+        if (userAge == 0) <!-- There was a second = missing and a semi colon that was not needed -->
+        {
+           alert("So you're a baby!");
+        }
+       else if ( userAge < 0 || userAge > 200) <!-- There was a second | missing and there are curly brackets missing from around the alert -->
+        {
+           alert("I think you may be lying about your age");
+        }
+        else
+           alert("That's a good age");
+        }</pre>
+
+    <h2>Question #2</h2>
+    <pre>
+        <html>
+        <body>
+        <script language=JavaScript>
+        var timesTable = 12;
+        var timesBy;
+
+        for (timesBy = 1; timesBy < 13; timesBy++)
+        {
+            document.write(timesTable + " * " + timesBy + " = " + timesBy * timesTable +
+            "<br>");
+        }
+        </script>
+        </body>
+        </html>
+    </pre>
+
+    <h2>Question #3</h2>
+    <pre>
+
+        <html>
+        <body>
+        <script language=JavaScript>
+        function writeTimesTable(timesTable, timesByStart, timesByEnd)
+        {
+           for (;timesByStart <= timesByEnd; timesByStart++)
+           {
+              document.write(timesTable + " * " + timesByStart + " = " +
+                 timesByStart * timesTable + "<br>");
+           }
+        }
+
+        writeTimesTable(4,4,9);
+        </script>
+        </body>
+        </html>
+</pre>
+
+    <h2>Question #4</h2>
+    <pre>
+
+        <html>
+        <body> <!-- Prompts the user to enter the correct number, if they don't they are given the option to retry, if they do it will write the table -->
+        <script language=JavaScript>
+
+        function writeTimesTable(timesTable, timesByStart, timesByEnd)
+        {
+           for (;timesByStart <= timesByEnd; timesByStart++)
+           {
+              document.write(timesTable + " * " + timesByStart + " = " +
+                 timesByStart * timesTable + "<br>");
+           }
+        }
+
+        var timesTable;
+
+        while ( (timesTable = prompt("Enter the times table",-1)) != -1)
+        {
+           while (isNaN(timesTable) == true)
+           {
+            timesTable = prompt(timesTable + " is not a valid number, please retry",-1);
+
+           }
+
+           if (timesTable == -1)
+           {
+              break;
+           }
+
+           document.write("<br>The " + timesTable + " times table<br>");
+           writeTimesTable(timesTable,1,12);
+
+        }
+
+        </script>
+        </body>
+        </html>
+
+    </pre>
+</body>
+
+</html>
