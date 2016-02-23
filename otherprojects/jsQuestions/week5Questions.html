@@ -39,8 +39,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-<!-- Code for Question # 1 -->                         
-Question # 1 
+<!-- Code for Question # 1 -->
+Question # 1
 
     function getTriangle(){
     var str = "";
@@ -52,13 +52,13 @@ Question # 1
             }
         str = str + < /br>
         }
-    $("#q1result").html(str);
+    $("#q1Asnwer").html(str);
                 }
-            
+
     $("#q1Button").on("click", function() {
                     getTriangle();
             });
-            
+
                         </pre>
 					</div>
 					<div class="col-md-12">
@@ -67,7 +67,7 @@ Question # 1
 					</div>
 					<div class="col-md-12">
 						<!-- Result of clicking button -->
-						<div id="q1result"></div>
+						<div id="q1Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -75,7 +75,7 @@ Question # 1
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-<!-- Code for Question # 2 -->                          
+<!-- Code for Question # 2 -->
 Question # 2
 
     function printFooBar() {
@@ -94,10 +94,10 @@ Question # 2
           }
 
         }
-        $("#q2result").html(print);
+        $("#q2Answer").html(print);
       }
 
-      $("#q2button").on("click", function() {
+      $("#q2Button").on("click", function() {
         printFooBar();
 
       });
@@ -109,7 +109,7 @@ Question # 2
 					</div>
 					<div class="col-md-12">
 						<!-- Result of clicking button -->
-						<div id="q2result">
+						<div id="q2Answer">
 						</div>
 					</div>
 				</div>
@@ -118,9 +118,9 @@ Question # 2
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-<!-- Code for Question # 3 -->                         
+<!-- Code for Question # 3 -->
 Question # 3
-						
+
     function chessBoard() {
     var size = prompt("Please enter a Number");
     var line = '';
@@ -132,17 +132,17 @@ Question # 3
         }
 
         for (i = 0; i < size; i++) {
-          if (i % 2 === 0) { 
+          if (i % 2 === 0) {
             print = print + (' ' + line) + "<br/>";
           } else {
             print = print + (line) + "<br/>";
           }
         }
-        $("#q3result").html(print);
+        $("#q3Answer").html(print);
       }
 
 
-      $("#q3button").on("click", function() {
+      $("#q3Button").on("click", function() {
 
         chessBoard();
       });
@@ -156,7 +156,7 @@ Question # 3
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q3result"></div>
+						<div id="q3Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -164,9 +164,9 @@ Question # 3
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-<!-- Code for Question # 4 -->                         
-Question # 4 
-				 
+<!-- Code for Question # 4 -->
+Question # 4
+
     function countBs(bString) {
     var count = 0;
     for (var i = 0; i < bString.length; i++) {
@@ -178,15 +178,15 @@ Question # 4
       }
 
 
-      $("#q4button").on("click", function() {
+      $("#q4Button").on("click", function() {
 
         var userInput = prompt("");
         var x = countBs(userInput);
 
-        $("#q4result").html(x);
+        $("#q4Result").html(x);
       });
 
-				  
+
                 </pre>
 
 					</div>
@@ -196,7 +196,7 @@ Question # 4
 					</div>
 					<div class="col-md-12">
 						<!-- Result of clicking button -->
-						<div id="q4result"></div>
+						<div id="q4Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -204,9 +204,9 @@ Question # 4
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-<!-- Code for Question # 5 -->                      
-Question # 5 
-						
+<!-- Code for Question # 5 -->
+Question # 5
+
         function countChar(cString, charMatch) {
         var count = 0;
         for (var i = 0; i < cString.length; i++) {
@@ -216,13 +216,13 @@ Question # 5
         }
         return count;
       }
-      $("#q5button").on("click", function() {
+      $("#q5Button").on("click", function() {
 
         var inputOne = prompt("");
         var inputTwo = prompt("")
 
         var t = countChar(inputOne, inputTwo)
-        $("#q5result").html(t);
+        $("#q5Answer").html(t);
       });
 
                 </pre>
@@ -233,7 +233,7 @@ Question # 5
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q5result"></div>
+						<div id="q5Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -241,16 +241,34 @@ Question # 5
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-                    test
+<!-- code for question #6-->
+Question # 6
+            range = (start, end, step) ->
+            step = 1  unless step
+            r = [2,5]
+            i = start
+
+            while (if start <= end then i <= end else i >= end)
+            r.push i
+            i += step
+            r
+
+            sum = (arr) ->
+            s = 0
+            for i in arr
+            s += i
+            s
+
                 </pre>
 					</div>
 					<div class="col-md-12">
 						<!-- Button -->
-						<button id="q6Button" class="btn btn-default" type="submit">Button</button>
+						<button id="q6Button" class="btn btn-default" type="submit">Button</button>]
+						<!-- naming convention camelCase -->
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q6result"></div>
+						<div id="q6Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -258,8 +276,8 @@ Question # 5
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-                    test
-                </pre>
+
+                        </pre>
 					</div>
 					<div class="col-md-12">
 						<!-- Button -->
@@ -267,7 +285,7 @@ Question # 5
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q7result"></div>
+						<div id="q7Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -284,7 +302,7 @@ Question # 5
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q8result"></div>
+						<div id="q8Answer"></div>
 					</div>
 				</div>
 			</div>
@@ -301,16 +319,16 @@ Question # 5
 					</div>
 					<div class="col-md-12">
 						<!-- Results of clicking button -->
-						<div id="q9result"></div>
+						<div id="q9Answer"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-                
-                
+
+
 	<script>
-		$(document).ready(function () {
+		$(document).ready(function() {
 			// code to allow question one to run
 			//this function prints a triangle of pound symbols
 			function getTriangle() {
@@ -323,12 +341,19 @@ Question # 5
 					}
 					str = str + "</br>"
 				}
-				$("#q1result").html(str);
+				$("#q1Answer").html(str);
 			}
-            //Produces answer when button is clicked
-			$("#q1Button").on("click", function () {
+			//Produces answer when button is clicked
+			$("#q1Button").on("click", function() {
 				getTriangle();
 			});
+
+
+
+
+
+
+
 			function printFooBar() {
 				var print = "";
 				var number = Number(1);
@@ -343,33 +368,96 @@ Question # 5
 						print = print + i + "<br/>";
 					}
 				}
-				$("#q2result").html(print);
+
+				$("#q2Answer").html(print);
 			}
-			$("#q2button").on("click", function () {
+			$("#q2Button").on("click", function() {
 				printFooBar();
 			});
-			$("#q3Button").on("click", function () {
-				$("#q3result").html("");
+
+
+
+
+
+			function chessBoard() {
+				var size = prompt("Please enter a Number");
+				var line = '';
+				var print = "";
+				var i = 0;
+
+				for (i = 0; i < size / 2; i++) {
+					line = print + line + '# ';
+				}
+
+				for (i = 0; i < size; i++) {
+					if (i % 2 === 0) {
+						print = print + (' ' + line) + "<br/>";
+					} else {
+						print = print + (line) + "<br/>";
+					}
+				}
+				$("#q3Answer").html(print);
+			}
+
+
+			$("#q3Button").on("click", function() {
+
+				chessBoard();
 			});
-			$("#q4Button").on("click", function () {
-				$("#q4result").html("");
+
+
+
+
+			function countBs(bString) {
+				var count = 0;
+				for (var i = 0; i < bString.length; i++) {
+					if (bString.charAt(i) == 'B') {
+						count = (count + 1);
+					}
+				}
+				return count;
+			}
+
+
+			$("#q4Button").on("click", function() {
+
+				var userInput = prompt("Please enter letter B as many times as you like!");
+				var x = countBs(userInput);
+
+				$("#q4Answer").html(x);
 			});
-			$("#q5Button").on("click", function () {
-				$("#q5result").html("");
+
+			function countChar(cString, charMatch) {
+				var count = 0;
+				for (var i = 0; i < cString.length; i++) {
+					if (cString.charAt(i) == charMatch) {
+						count = (count + 1);
+					}
+				}
+				return count;
+			}
+			$("#q5Button").on("click", function() {
+
+				var inputOne = prompt("Please write a word that repeats the same letter more than once! Example: Todd");
+				var inputTwo = prompt("Please type the repeating letter from this word that you would like to count! Example: d")
+
+				var t = countChar(inputOne, inputTwo)
+				$("#q5Answer").html(t);
 			});
-            
-            //Just fillers - not real questions 
-			$("#q6Button").on("click", function () {
-				$("#q6result").html("");
+
+
+			//Just fillers - not real questions
+			$("#q6Button").on("click", function() {
+				$("#q6Answer").html("");
 			});
-			$("#q7Button").on("click", function () {
-				$("#q7result").html("");
+			$("#q7Button").on("click", function() {
+				$("#q7Answer").html("");
 			});
-			$("#q8Button").on("click", function () {
-				$("#q8result").html("");
+			$("#q8Button").on("click", function() {
+				$("#q8Answer").html("");
 			});
-			$("#q9Button").on("click", function () {
-				$("#q9result").html("");
+			$("#q9Button").on("click", function() {
+				$("#q9Answer").html("");
 			});
 		});
 	</script>
