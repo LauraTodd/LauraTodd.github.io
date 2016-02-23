@@ -445,11 +445,26 @@ Question # 6
 				$("#q5Answer").html(t);
 			});
 
+function range(start, end){}
 
+	var arr=[];
+	arr.push(1);
+	arr.push(5);
+
+	return arr;
+
+	return
 			//Just fillers - not real questions
 			$("#q6Button").on("click", function() {
-				$("#q6Answer").html("");
+
+alert("6");
+//range(3,5);
+var rangeAnswer = range();
+
+				$("#q6Answer").html("Answer is: "+rangeAnswer.join());
 			});
+
+
 			$("#q7Button").on("click", function() {
 				$("#q7Answer").html("");
 			});
