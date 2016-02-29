@@ -243,25 +243,30 @@ Question # 5
 						<pre>
 <!-- code for question #6-->
 Question # 6
-     function range(start, end){
+    function range(start, end) {
 
-	var arr=[];
-	arr.push(1);
-	arr.push(5);
+    var arr = [];
+	
+    if (start <= end){
+    for (start; start <= end; start++){
+    arr.push(start);
+                    
+                }
+                }
+    return arr;
+			    
 
-	return arr;
-        }
-
-
+                
 			//Just fillers - not real questions
 			$("#q6Button").on("click", function() {
 
 
-//range(3,5);
-var rangeAnswer = range();
+				//range(3,5);
+				var rangeAnswer = range(2,6);
 
-            $("#q6Answer").html("Answer is: " +rangeAnswer.join());
+				$("#q6Answer").html("Answer is: " + rangeAnswer.join());
 			});
+
 
 
 
@@ -270,7 +275,7 @@ var rangeAnswer = range();
 					</div>
 					<div class="col-md-12">
 						<!-- Button -->
-						<button id="q6Button" class="btn btn-default" type="submit">Button</button>]
+						<button id="q6Button" class="btn btn-default" type="submit">Button</button>
 						<!-- naming convention camelCase -->
 					</div>
 					<div class="col-md-12">
@@ -456,19 +461,24 @@ var rangeAnswer = range();
 			function range(start, end) {
 
 				var arr = [];
-				arr.push(1);
-				arr.push(5);
-
+                
+	
+                if (start <= end){
+                for (start; start <= end; start++){
+                arr.push(total);
+                    
+                }
+                }
 				return arr;
 			}
 
-
+                
 			//Just fillers - not real questions
 			$("#q6Button").on("click", function() {
 
 
 				//range(3,5);
-				var rangeAnswer = range();
+				var rangeAnswer = range(2,6);
 
 				$("#q6Answer").html("Answer is: " + rangeAnswer.join());
 			});
