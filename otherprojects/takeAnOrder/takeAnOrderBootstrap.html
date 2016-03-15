@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Order a Puppy!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: white;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .jumbotron {
+      background: #B0BEC5;
+    }
+
+    html,
+    body {
+      height: 101%;
+    }
+
+    body {
+      color: #ffffff;
+      background-image: url(images/background.jpg);
+    }
+
+    .container {
+      background: #FFB74D;
+      height: 101%;
+    }
+  </style>
+</head>
+
+<body>
+  <!--- nav bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://LauraTodd.github.io/index.html">Laura Todd</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://LauraTodd.github.io/index.html" target="_blank">Home</a></li>
+        <li><a href="http://LauraTodd.github.io/otherProjects/codeAdacdemy/index.html" target="_blank">Code Academy</a></li>
+        <li><a href="http://LauraTodd.github.io/otherProjects/ticTacToe/index.html" target="_blank">Tic Tac Toe</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">JS Questions
+        <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://LauraTodd.github.io/otherprojects/jsQuestions/index.html" target="_blank">Week 3 Questions</a></li>
+            <li><a href="http://LauraTodd.github.io/otherprojects/jsQuestions/week5Questions.html" target="_blank">Week 5 Questions</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Twitter Bootstrap
+        <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://LauraTodd.github.io/otherprojects/twitterBootstrap/index.html" target="_blank">Week 3</a></li>
+            <li><a href="http://LauraTodd.github.io/otherprojects/twitterBootstrap/carousel.html" target="_blank">Carousel</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- site header -->
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Order a Puppy Online Now!</h1>
+      <p>Have you ever wanted a puppy? Now you can order one right to your door!</p>
+    </div>
+    <!-- Images of available puppies for order -->
+    <div class="row">
+      <div class="bs-example col-md-4">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+          <!--images of puppes in carousel-->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/corgi.jpg" alt="Corgi">
+            </div>
+            <div class="item">
+              <img src="images/bernese.jpg" alt="Bernse Mountain Dog ">
+            </div>
+            <div class="item">
+              <img src="images/golden.jpg" alt="Golden Retreiver">
+            </div>
+            <div class="item">
+              <img src="images/pug.jpg" alt="Pug">
+            </div>
+            <div class="item">
+              <img src="images/bulldog.jpg" alt="Bulldog">
+            </div>
+
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Radio buttons for which breed user would like -->
+      <div class="col-md-4">
+        <h3>Please Select Which Dog Breed You Would Like!</h3>
+        <label class="checkbox-inline">
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" id="optionsRadios1" value="Corgi" checked> Corgi
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" id="optionsRadios2" value="Bernese Mountain Dog"> Bernese Mountain Dog
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" id="optionsRadios3" value="Golden Retreiver"> Golden Retreiver
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" id="optionsRadios3" value="Pug"> Pug
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" id="optionsRadios3" value="English Bulldog"> English Bulldog
+            </label>
+          </div>
+          <!-- Radio buttons for which gender user would like -->
+          <h4>Please Select Which Dog Gender You Would Like!</h4>
+          <label class="checkbox-inline">
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" id="optionsRadios1" value="Male" checked> Male
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" id="optionsRadios2" value="Female"> Female
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" id="optionsRadios3" value="Surprise Me!"> Surprise Me!
+            </div>
+            <!-- Check boxes for if user already has pets -->
+
+            <select id="mySelect" class="form-control">
+              <option>How Many Dogs Do You Currently Own?</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3+</option>
+            </select>
+
+
+            <div id="mySelectMessage"></div>
+      </div>
+
+      <!-- Right column - additional contact information -->
+      <div class="col-md-4 addpad">
+        <textarea id="myTextArea" class="form-control" rows="5" placeholder="Please enter your full address"></textarea>
+      </div>
+
+      <div class="col-md-4 addpad">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Please enter your full name</label>
+            <input type="text" class="form-control" id="mySingleLineText" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Please enter your email address&nbsp;</label>
+            <input type="email" class="form-control" id="mySingleLineText2" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Please enter your phone number&nbsp;</label>
+            <input type="email" class="form-control" id="mySingleLineText2" placeholder="(555)-555-5555">
+          </div>
+        </form>
+      </div>
+
+
+      <div class="col-md-4 addpad">
+        <button id="myButton" type="button" class="btn btn-primary btn btn-danger">Order my Puppy Now!</button>
+      </div>
+      <div class="col-md-12" id="log"></div>
+    </div>
+  </div>
+  <script src="js/takeAnOrder.js"></script>
+</body>
+
+</html>
