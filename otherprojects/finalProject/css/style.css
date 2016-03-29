@@ -1,0 +1,19 @@
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #4DCC9E;
+}
+a {
+    color: #4DCC9E;
+    text-decoration: none;
+}
+
+.carousel{
+    background: #ffaf61;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}

@@ -1,0 +1,75 @@
+    [
+    {
+    "type":"Bulldog",
+    "name":"Barb",
+    "gender":"Male",
+    "image":"images/bulldog.jpg",
+    "comments":[
+        {
+        "username":"ltodd",
+        "stars": 5,
+        "comment":"I love this puppy!"
+        },
+        {
+        "username":"megzstorey",
+        "stars": 1,
+        "comment":"This puppy stinks!"
+        },
+        {
+        "username":"jessnapez",
+        "stars": 4,
+        "comment":"Pretty decent puppy"
+        }
+    ]
+        
+        
+    },  
+    {
+    "type":"Bernese Mountain Dog", 
+    "name":"Paws",
+    "gender":"Female",
+    "image":"images/bernese.jpg",
+       "comments":[
+        {
+        "username":"puppyhater",
+        "stars": 1,
+        "comment":"I hate all puppies, especially these ones"
+        },
+        {
+         "username":"robcheeze",
+        "stars": 5,
+        "comment":"Great puppy! Great service! Would totally order another puppy from here!"
+        },
+        {
+        "username":"tylawr9000",
+        "stars": 3,
+        "comment":"This puppy is average"
+        }
+    ]
+    },
+        
+    {
+    "type":"Corgi",  
+    "name":"Rob",
+    "gender":"Transgendered",
+    "image":"images/corgi.jpg",
+    "comments":[
+        {
+        "username":"biancz123",
+        "stars": 1,
+        "comment":"I really prefer cats.. doez any1 know a good cat order site???"
+        },
+        {
+         "username":"dbrookz33",
+        "stars": 5,
+        "comment":"The corgis are my fave!"
+        },
+        {
+        "username":"markAnderson12",
+        "stars": 1,
+        "comment":"Cats are better!"
+        }
+    ]
+        
+        
+    }]
