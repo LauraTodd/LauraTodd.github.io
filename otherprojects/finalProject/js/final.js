@@ -10,16 +10,27 @@ $(document).ready(function(){
     $(this).addClass("active");
                                                    
     var page = $(this).attr("id");
+    getPartial(page);
     
-    alert(page);
+    
                    
-                   
+    })
+    
+    
+    
+    
+    
+    
+})
+                  
+              
+                  
+                  
                    
                    
              
 
-
-
+/*
 
     })//click
     
@@ -39,4 +50,8 @@ $(document).ready(function(){
     }
     //begin the program 
     getPartial("homePage");
+}
+
 })//ready
+
+*/

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+
+
+<style>
+    .container{
+        
+        color: #4DCC9E;
+        
+    }
+
+
+</style>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+
+
+  <div class="container">
+           <img src=images/buyheader.png class="img-responsive center-block img-ro" id="headerimage" alt="header image" />
+      
+      <div class="page-header">
+  <h1>Shop some of our favourite record albums!   <span class="label label-primary">2 DAY SHIPPING</span></h3></h1>
+</div>
+
+      
+      
+    <!-- Images of available puppies for order -->
+    <div class="row">
+      <div class="col-md-6">
+        <div id="myCarousel" class="carousel slide center-block img-responsive" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+          <!--images of puppes in carousel-->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/ourlove.jpg" alt="Our Love Album">
+            </div>
+            <div class="item">
+              <img src="images/fleetfoxes400.png" alt="Fleet Foxes Album">
+            </div>
+            <div class="item">
+              <img src="images/lostinthedream400.png" alt="Lost In The Dream Album">
+            </div>
+            <div class="item">
+              <img src="images/cascades400.png" alt="Cascades Album">
+            </div>
+            <div class="item">
+              <img src="images/jamesblake400.png" alt="James Blake">
+            </div>
+              
+               <div class="item">
+              <img src="images/allahlas400.png" alt="Allah Las">
+            </div>
+
+          </div>
+          <!-- Carousel controls -->
+           <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+        
+<div class="col-md-6"></div>
+<div id="data" class="col-xs-12 col-md-6">
+
+  <div class="col-xs-12 col-md-12">
+    <label class="control-label">
+      Choose Record
+    </label>
+    <select id="albumSelect" class="form-control">
+ 
+      <option value=" Our Love by Caribou">Our Love $19.99</option>
+      <option value=" Fleet Foxes by Fleet Foxes">Fleet Foxes $14.99</option>
+      <option value=" Lost In The Dream by The War On Drugs">Lost In The Dream $23.99</option>
+      <option value=" Cascades by High Highs">Cascades $11.99</option>
+      <option value=" James Blake by James Blake">James Blake $13.99</option>
+      <option value=" Shame, Shame by Dr. Dog">Shame, Shame $15.00</option>
+      <option value=" Magnifique by Ratatat">Magnifique $19.99</option>
+      <option value=" Repave by Volcano Choirs">Repave $16.99</option>
+
+    </select>
+  </div>
+
+
+  <div class="col-md-12">
+    <label class="control-label">
+      Card Holder's Name
+    </label>
+    <input type="text" placeholder="Jane Doe" id="name" class="form-control">
+  </div>
+
+  <div class="col-xs-12 col-md-8">
+    <label class="control-label">
+      Card Number
+    </label>
+    <input id="cardNumber" type="text" maxlength="14" placeholder="4532-xxxx-xxxx-xxxx" class="form-control input-md">
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <label class="control-label">
+      Card CVV
+    </label>
+    <input type="text" id="securityCode" class="form-control" maxlength="3" title="Three digits at back of your card" placeholder="123">
+  </div>
+
+  <div class="col-xs-12  col-md-6">
+    <label class="control-label">
+      Card Expiry Month
+    </label>
+    <select id="expirymonth" name="expirymonth" class="form-control">
+      <option value="01">January</option>
+      <option value="02">February</option>
+      <option value="03">March</option>
+      <option value="04">April</option>
+      <option value="05">May</option>
+      <option value="06">June</option>
+      <option value="07">July</option>
+      <option value="08">August</option>
+      <option value="09">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      Card Expiry Year
+    </label>
+    <input id="expiryYear" type="text" placeholder="2014" class="form-control input-md">
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      Address
+    </label>
+    <input id="address1" type="text" placeholder="123 Fake Street" class="form-control">
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      ZIP/Postal Code
+    </label>
+    <input type="text" id="zip" placeholder="A1B 2C3" class="form-control">
+  </div>
+
+  <div class="col-sm-6 col-xs-6 col-md-6">
+    <label class="control-label">
+      State/Province
+    </label>
+    <input type="text" id="state" placeholder="Ontario" class="form-control">
+  </div>
+
+   <div class="col-sm-6 col-xs-6 col-md-6">
+    <label class="control-label">
+      Country
+    </label>
+    <select id="countrySelect" class="form-control">
+      <option value="canada">Canada</option>
+      <option value="use">USA</option>
+    </select>
+  </div>
+  <div class="col-md-10">
+    <button id="submitButton" class="btn btn-info">
+   
+   Complete Order!
+    </button>
+  </div>
+<div id='successMsg' class='col-md-12 text-success'></div>
+</div>
+<div class="col-xs-12 col-md-3"></div>
+</div>
+
+<div id="log">LOG</div>
+
+
+
+
+
+
+<html lang="en">
+
+<span id="pageContent"></span>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    
+  <link rel="stylesheet" href="css/style.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+<script src="js/shop.js"></script>
+<script src="js/final.js"></script>
+
+<script src="js/getNav.js"></script>
+<script src="js/getFooter.js"></script>
+
+
+
+
+
+
+
+
+

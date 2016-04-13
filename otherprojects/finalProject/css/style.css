@@ -1,4 +1,4 @@
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+/*.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
     background-color: #4DCC9E;
 }
@@ -12,8 +12,60 @@ a {
     margin-top: 20px;
 }
 .carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
+    margin: 0 auto; 
 }
 .bs-example{
 	margin: 20px;
+}
+
+*/
+
+.albumImage{
+    height: 200px;
+    width: 200px;
+}
+
+.jumbotron{
+    background-image: url(header.png);
+    text-align: center;
+    color: #4DCC9E;
+    
+    
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #4DCC9E;
+  
+}
+a {
+    color: #4DCC9E;
+    text-decoration: none;
+}
+
+#headerimage{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#myCarousel{
+    width: 400px;
+
+}
+
+.carousel-inner{
+    width: 400px;
+}
+
+p{
+    
+    color: black;
+    font-size: 16px;
+    text-indent: inherit;
+
+}
+
+#successMsg{
+    color: #4DCC9E;
+    font-size: 24px;
 }
