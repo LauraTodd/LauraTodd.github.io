@@ -18,11 +18,11 @@
      
     {
     "image": "images/lostinthedream.png",    
-<<<<<<< HEAD
+
     "album":"Lost In The Dream" ,
-=======
+
     "album":"Lost In The Dream",
->>>>>>> origin/master
+
     "artist":"The War On Drugs",
     "year":"2014",
     "genre": "Indie Rock"
@@ -72,7 +72,7 @@
         
     },
     {
-<<<<<<< HEAD
+
     "image": "images/houseofballoons.png",    
     "album":"House Of Balloons",
     "artist":"The Weeknd",
@@ -102,40 +102,7 @@
     "artist":"Allah-Las",
     "year":"2012",
     "genre": "Surf Rock"
-=======
-    "image": "images/repave.png",    
-    "album":"Repave",
-    "artist":"Volcano Choir",
-    "year":"2013",
-    "genre": "Ambient/Indie Rock"
-        
-    },
-    {
-    "image": "images/repave.png",    
-    "album":"Repave",
-    "artist":"Volcano Choir",
-    "year":"2013",
-    "genre": "Ambient/Indie Rock"
-        
-    },
-    {
-    "image": "images/repave.png",    
-    "album":"Repave",
-    "artist":"Volcano Choir",
-    "year":"2013",
-    "genre": "Ambient/Indie Rock"
-        
-    },
-    {
-    "image": "images/repave.png",    
-    "album":"Repave",
-    "artist":"Volcano Choir",
-    "year":"2013",
-    "genre": "Ambient/Indie Rock"
->>>>>>> origin/master
-        
     }
-     
      
 
 

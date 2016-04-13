@@ -24,7 +24,7 @@ $.getJSON("jsonDatabase/favourites.json",function(data){
             html += '</div>'+
                     '</div>';
                 
-    })//each puppy 
+    })
     
     $("#albumData").append(html);
 
@@ -37,32 +37,3 @@ $.getJSON("jsonDatabase/favourites.json",function(data){
                   
                   })
 
-/*
-
-<div class="col-md-4 puppy">
-<div class="puppyName"></div>
-<div class="puppyType"></div>
-<div class="puppyGender"></div>
-<img src=""/>
-<div class"commentsContainer">
-//one per comment
-<div class"buyerName"></div>
-<div class"buyerLocation"></div>
-<div class"buyerStars">
-//5 stars, some full, some empty
-</div> //end stars here 
-</div>//end commentsContainer
-</div> //end puppy
-          
-          
- <div class="panel panel-default">
-
-  <div class="panel-heading">Comments</div>
-  <div class="panel-body">
-    //name
-    //comments
-    //stars
-  </div>
-
-  \
-*/
