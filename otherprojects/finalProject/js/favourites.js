@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    
+ //calls json favourites page   
 $.getJSON("jsonDatabase/favourites.json",function(data){
           
           console.dir(data);
     var html="";
     
-    
+    //loads data from json page to html page 
     $.each(data, function(index, item){
         html += '<div id="albums" class="col-md-3 albums">'+
             '<img class"albumImage" src="'+ item.image+'"/>'+ "<br>" +
@@ -25,7 +25,7 @@ $.getJSON("jsonDatabase/favourites.json",function(data){
                     '</div>';
                 
     })
-    
+    //puts data before div album data 
     $("#albumData").append(html);
 
 
