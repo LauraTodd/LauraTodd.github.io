@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+/* CSS Reset */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* CSS Reset */
+
+
+/*Importing fonts*/
+@font-face {
+    font-family: 'wolf_in_the_city_lightregular';
+    src: url('../fonts/wolf_in_the_city_light-webfont.eot');
+    src: url('../fonts/wolf_in_the_city_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wolf_in_the_city_light-webfont.woff2') format('woff2'),
+         url('../fonts/wolf_in_the_city_light-webfont.woff') format('woff'),
+         url('../fonts/wolf_in_the_city_light-webfont.ttf') format('truetype'),
+         url('../fonts/wolf_in_the_city_light-webfont.svg#wolf_in_the_city_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'wolf_in_the_cityregular';
+    src: url('../fonts/wolf_in_the_city-webfont.eot');
+    src: url('../fonts/wolf_in_the_city-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wolf_in_the_city-webfont.woff2') format('woff2'),
+         url('../fonts/wolf_in_the_city-webfont.woff') format('woff'),
+         url('../fonts/wolf_in_the_city-webfont.ttf') format('truetype'),
+         url('../fonts/wolf_in_the_city-webfont.svg#wolf_in_the_cityregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'walkway_semiboldregular';
+    src: url('../fonts/walkway_semibold-webfont.eot');
+    src: url('../fonts/walkway_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/walkway_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/walkway_semibold-webfont.woff') format('woff'),
+         url('../fonts/walkway_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/walkway_semibold-webfont.svg#walkway_semiboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Styling wrapper*/
+#wrapper{
+    max-width: 1080px;
+    margin: auto;
+}
+/*Styling body*/
+body{
+    font-family: 'walkway_semiboldregular';
+    font-size: 20px;
+}
+/*Styling headers*/
+#home{
+    font-family: 'wolf_in_the_cityregular';
+    font-size: 200px;
+    color: white;
+
+    position: relative;
+    text-align: center; 
+}
+
+#about{
+    font-family: 'wolf_in_the_cityregular';
+    font-size: 300px;
+    margin-left: 570px;
+    margin-top: 260px;
+    position: absolute;
+}
+
+#photography{
+    font-family: 'wolf_in_the_cityregular';
+    font-size: 250px;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    color: black;
+    background-color: white;
+}
+#design{
+    font-family: 'wolf_in_the_cityregular';
+    font-size: 250px;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    color: black;
+    background-color: white;
+}
+
+/*Styling navigation*/
+
+#site-nav ul{
+    top: 5px;
+    width: 960px;
+    padding: 20px;
+    word-spacing: 100px;
+    text-align: center;
+}
+
+#site-nav ul li{
+    display: inline-block;
+}
+
+#site-nav ul li a{
+    text-decoration: none;
+	font-size: 20px;    
+	line-height: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#index-site-nav{
+    font-family: 'walkway_semiboldregular';
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    
+
+
+    text-align: center;
+    line-height: 40px;
+    
+}
+/*Styling links*/
+
+#index-site-nav a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Styling footers*/
+
+#site-footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-left: 30px;
+    font-size: 24px;
+}
+#photo-footer{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+#design-footer{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+/*Styling photography and design libraries*/
+
+#container{
+    height: 636px;
+    width: 960px;
+    margin: 0 auto;
+}
+/*Styling header/background images*/
+
+#indexbackground{
+    background-image: url(../images/homeheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+
+/*Styling about me paragraph*/
+
+article{
+    margin-left: 570px;
+    margin-top: 400px;
+    font-size: 24px;
+    width: 500px;
+    text-align: justify;
+    
+}
+/*Hidding mobile version of photography/design galleries*/ 
+#mobile-gallery{
+    display: none;
+        
+    }
+    
+/*Styling mobile layout*/
+@media screen and ( max-width: 960px ){
+
+/*Styling mobile layout headers*/   
+header{      
+    max-width: 960px;
+    height: 270px;
+    background-size: 180px; 
+}
+#home{
+    font-size: 100px;    
+    }
+    
+h1{
+    position: relative;
+    left: 80px;
+    top: 60px;
+    width: 350px;
+    font-size: 20px;
+    line-height: 80px;
+}
+/*Styling mobile layout navigation*/
+#index-site-nav{
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+    position: relative;
+    left: 80px;
+    top: 60px;
+    width: 350px;
+    font-size: 20px;
+
+}
+    
+    
+
+
+/*Styling mobile layout header/background images*/  
+#aboutbackground{
+    background-size: 250%;
+    background-image: fixed;
+}
+
+
+/*Styling footers*/   
+#site-footer{
+    position: absolute;
+    color: white;
+    bottom: -20px;
+    }
+    
+
+
+/*Styling photography/design galleries*/  
+#container{
+    display: none;
+
+    }
+    
+#mobile-gallery{
+    display: block;
+        
+    }
+    
+img{
+    width: 100%;
+    padding: 20px;
+    bottom: 5px;
+    position: relative;
+    margin-top: 10px;
+
+        }
+    
+
+
+    
+    
+/*styling mobile layout of body text*/
